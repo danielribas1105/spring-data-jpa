@@ -3,7 +3,8 @@ package drcode.springdata.model;
 import jakarta.persistence.*;
 
 
-@Entity(name = "New_User")
+@Entity
+@Table(name = "tab_user")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
